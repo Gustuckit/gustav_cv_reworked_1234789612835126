@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "experience": "44th President of the U.S.A",
+        "description": "Obama became the first black president of the U.S.A. His presidency lasted 2 periods, totaling a period of 8 years, starting in 2009 and ending in 2017, being superceded by Donald Trump."
+    },
+    {
+        "id": 2,
+        "experience": "American Senator from Illinois",
+        "description": "Obama worked as an American Senator acting on Illinois' behalf, from 2005 to 2008."
+    },
+    {
+        "id": 3,
+        "experience": "Member of Illinois Senate, 13th District",
+        "description": "Obama was a member of Illinois Senate in the 13th District from 1997 to 2004."
+    },
+    {
+        "id": 4,
+        "experience": "Harvard Law School",
+        "description": "Obama attended Harvard Law School from 1988 to 1991, where he studied law."
+    },
+    {
+        "id": 5,
+        "experience": "Columbia College",
+        "description": "Obama attended Columbia College from 1981 to 1983."
+    },
+    {
+        "id": 6,
+        "experience": "Punahou School",
+        "description": "Obama attended Punahou School from 5th to 12th grade during the years 1971 to 1979. Punahou School is a private college prep school located in Honolulu, Hawaii."
+    }
+]

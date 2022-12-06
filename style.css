@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+
+/* GENERAL */
+
+body{
+    font-family:"Open Sans", sans-serif;
+    font-size:20px;
+    font-weight:600px;
+    margin:1em;
+}
+
+/* TEXT */
+
+a{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1%;
+}
+
+h1 , h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p , li , .descriptionMain , .period , .bottomGeneral{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* NAVBAR */
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 0;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin: 0 0 1em 0;
+    border: 1px solid black;
+}
+.current-page{
+    font-family:"Open Sans", sans-serif;
+    text-align: center;
+}
+
+a:link, a:visited{
+    text-decoration:none;
+    color: black;
+}
+
+.nav-bar a:hover{
+    color:red;
+}
+.headerPortfolio > .nav-bar a.nav-portfolio{
+    color:red;
+}
+.headerGeneral > .nav-bar a.nav-general{
+    color:red;
+}
+.headerHome > .nav-bar a.nav-home{
+    color:red;
+}
+.headerContact > .nav-bar a.nav-contact{
+    color:red;
+}
+
+
+
+
+            /* (GENERAL PAGE) */
+
+.gridGeneral > section{
+    padding: .5em;
+    text-align: center;
+}
+
+.gridGeneral{
+    margin: 0 0 0 30%;
+    width: 40%;
+    padding: .5em;
+    display: grid;
+    grid-auto-rows: minmax(min-content,auto);
+    grid-gap: .5em;
+}
+.photoGeneral{
+    margin: .5em 0 .75em 0;
+    width: 100%;
+    border-radius: 50%;
+}
+.nameGeneral{
+    font-size: 22px;
+    margin: 0 0 .5em 0;
+}
+.professionGeneral{
+    font-size: 18px;
+}
+
+/* MOBILE & TABLET LAYOUT */
+
+@media (max-width: 1400px){
+    .nav-bar{
+        flex-direction: column;
+        margin-left:12.5%;
+        width:75%;
+    }
+}
+
+            /* END OF GENERAL PAGE */
+
+
+
+
+
+
+
+
+
+            /* (MAIN) */
+
+.gridMain > section{
+    padding: .5em;
+    border-radius:.5em;
+    border: 1px solid black;
+}
+.gridMain{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows:minmax(min-content, auto);
+    grid-auto-columns:minmax(min-content,auto);
+    margin:0 auto;
+    grid-gap:.5em;
+    grid-template-areas:
+    "leftMain experience experience experience"
+    "leftMain per1 desc1 desc1"
+    "leftMain per2 desc2 desc2"
+    "leftMain per3 desc3 desc3"
+    "leftMain education education education"
+    "leftMain per4 desc4 desc4"
+    "leftMain per5 desc5 desc5"
+    "leftMain per6 desc6 desc6";
+    grid-area: content;
+}
+
+.experience , .education{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(201, 201, 201);
+}
+.leftMain{
+    background: rgb(80, 80, 80);
+}
+.period{
+    background: rgb(110, 110, 110);
+}
+.descriptionMain{
+    background: rgb(146, 146, 146);
+}
+
+/* GRID AREAS */
+
+.leftMain{
+    grid-area:leftMain;
+}
+.experience{
+    grid-area:experience;
+}
+.education{
+    grid-area:education;
+}
+
+.descriptionMain , .period , .experience , .education , .leftMain{
+    min-width:min-content;
+}
+
+.period1{
+    grid-area:per1;
+}
+.period2{
+    grid-area:per2;
+}
+.period3{
+    grid-area:per3;
+}
+.period4{
+    grid-area:per4;
+}
+.period5{
+    grid-area:per5;
+}
+.period6{
+    grid-area:per6;
+}
+.desc1{
+    grid-area:desc1;
+}
+.desc2{
+    grid-area:desc2;
+}
+.desc3{
+    grid-area:desc3;
+}
+.desc4{
+    grid-area:desc4;
+}
+.desc5{
+    grid-area:desc5;
+}
+.desc6{
+    grid-area:desc6;
+}
+
+/* LEFT */
+
+.leftMain{
+    background-color:grey;
+    text-align: center;
+}
+.leftMain h1{
+    color:black;
+    text-align: center;
+}
+.leftMain h2{
+    color:black;
+    text-align: center;
+}
+.leftMain p {
+    color:white;
+    font-size: 16px;
+    text-align: left;
+    margin-left: .5em;
+}
+.leftMain li {
+    color:white;
+    font-size: 16px;
+    text-align: left;
+    margin-left: .5em;
+}
+.leftMain li{
+    margin-left:.5em;
+    padding-bottom:.5em;
+}
+
+.photoMain{
+    margin:.5em 0 .75em 0;
+    width:100%;
+    border-radius:50%;
+}
+.nameMain{
+    font-size:22px;
+    margin:0 0 .5em 0;
+}
+.professionMain{
+    font-size:18px;
+}
+.personalMain{
+    font-size:22px;
+}
+
+/* PERIOD */
+
+.period li{
+    color:white;
+    font-size:18px;
+}
+
+/* EXPERIENCE */
+
+.experience{
+    text-align: center;
+    font-size: 28px;
+}
+
+/* EDUCATION */
+
+.education{
+    text-align: center;
+    font-size: 28px;
+}
+
+/* MOBILE & TABLET Layout */
+
+@media (max-width: 1400px){
+    .gridMain{
+        width:75%;
+        display:grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-auto-rows:minmax(min-content, auto);
+        grid-auto-columns:minmax(min-content,auto);
+        margin:0 auto;
+        grid-gap:.5em;
+        grid-template-areas:
+        "leftMain leftMain leftMain leftMain"
+        "leftMain leftMain leftMain leftMain"
+        "leftMain leftMain leftMain leftMain"
+        "experience experience experience experience"
+        "per1 per1 desc1 desc1"
+        "per2 per2 desc2 desc2"
+        "per3 per3 desc3 desc3"
+        "education education education education"
+        "per4 per4 desc4 desc4"
+        "per5 per5 desc5 desc5"
+        "per6 per6 desc6 desc6";
+    }
+    .gridMain .bioMain{
+        text-align: center;
+    }
+}
+
+            /* END OF MAIN PAGE */
+
+
+
+
+
+
+
+
+            /* (CONTACT PAGE) - GRID & CONTENT */
+
+.gridContact{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows:minmax(min-content, auto);
+    grid-auto-columns:minmax(min-content,auto);
+    margin:0 auto;
+    grid-gap:.5em;
+}
+section > *{
+    justify-content: center;
+}
+.photoContact{
+    margin: .5em 0 .75em 0;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 50%;
+}
+.nameContact{
+    font-size: 22px;
+    margin: 0 0 .5em 0;
+    text-align: center;
+}
+.professionContact{
+    font-size: 18px;
+    text-align: center;
+}
+.personalContact{
+    margin-top:2em;
+    text-align: left;
+}
+.informationContact > h1{
+    font-size: 48px;
+    margin-left:.5em;
+}
+.informationContact > li{
+    font-size: 36px;
+    color:black;
+}
+@media (max-width: 1400px){
+    .gridContact{
+        display:grid;
+        width:75%;
+        grid-template-columns:repeat(1, 1fr);
+        grid-auto-rows:minmax(min-content, auto);
+        grid-auto-columns:minmax(min-content,auto);
+        margin:0 auto;
+        grid-gap:.5em;
+    }
+    .personalContact{
+        text-align: center;
+        margin-top:0em;
+    }
+    .informationContact > h1{
+        font-size: 32px;
+        margin-left:.5em;
+    }
+    .informationContact > li{
+        text-align:center;
+        font-size: 24px;
+        color:black;
+    }
+    .informationContact > button{
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+            /* END OF CONTACT PAGE */
+
+
+
+
+
+
+            
+
+            /* PORTFOLIO PAGE */
+
+
+.mainPortfolio{
+    width: 100%;
+    justify-content: center;
+}
+.mainPortfolio article{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1em;
+}
+.mainPortfolio p{
+    color: white;
+}
+.mainPortfolio button{
+    padding: .4em;
+    margin: 2em;
+}
+
+@media (max-width: 1400px){
+    .mainPortfolio{
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .mainPortfolio article{
+        background-color: grey;
+        align-items: center;
+    }
+    .mainPortfolio p{
+        text-align: center;
+    }
+    .mainPortfolio button{
+        padding: .4em;
+        margin: 2em;
+    }
+}
+
+/* MODAL CSS */
+
+.contactModal > *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.buttonWebsite{
+    background: grey;
+    color: white;
+    border: none;
+    margin-left: 1rem;
+    font-size: 18px;
+    padding: .4em 1em;
+}
+.buttonWebsite:hover{
+    background:darkgray;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4)
+}
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 25% 25%;
+    padding: 2em;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: openmodal;
+    animation-duration: .6s;
+    text-align: center;
+}
+.modal-content a{
+    color: blue;
+}
+.modal-content a:hover{
+    color: green;
+}
+.closeBtn{
+    color: black;
+    float:right;
+    margin: -40px -25px 0 0;
+    font-size: 33px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    cursor:pointer;
+    color: red;
+}
+@keyframes openmodal{
+    from{opacity: 0}
+    to{opacity: 1}
+}
